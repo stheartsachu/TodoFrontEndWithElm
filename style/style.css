@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  grid-template-rows: 80px 1fr 80px;
+  grid-template-columns: 1fr;
+}
+header {
+  background-color: #042d3c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-icon {
+  font-size: 80px;
+  color: white;
+}
+.todo-content {
+  display: flex;
+  flex-direction: column;
+}
+.todo-header {
+  font-size: xx-large;
+  color: white;
+}
+.todo-description {
+  font-size: medium;
+  color: white;
+}
+section {
+  background-color: #e7e7e7;
+  grid-column: 1/4;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+.add-todo-button {
+  background-color: #8ad6c8; /* Green */
+  border: none;
+  color: black;
+  padding: 15px 150px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: large;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  border-radius: 5px;
+}
+.add-todo {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid gray;
+  border-radius: 5px;
+  padding: 10%;
+  padding-bottom: 10px;
+}
+.title-section {
+  height: 30px;
+  width: 100%;
+}
+.title-section input {
+  border-radius: 2px;
+  margin-left: 50px;
+}
+
+.descriptio-section textarea {
+  width: 300px;
+  height: 100px;
+  border: 2px solid gray;
+  border-radius: 5px;
+  resize: none;
+}
+.functionality-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+  padding-bottom: 0;
+}
+.add-btn {
+  padding: 10px 30px;
+}
+.cancel-btn {
+  padding: 10px 20px;
+  margin-left: 20px;
+}
+.add-todo-button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+.list-container {
+  margin-top: 20px;
+  margin-right: 20px;
+  width: 700px;
+  height: 60px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media only screen and (max-width: 700px) {
+  .list-container {
+    width: 400px;
+  }
+}
+
+.list-show ul {
+  list-style-type: none;
+}
+.title-section-list {
+  color: black;
+  width: 80%;
+  border: 1px solid black;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: medium;
+}
+.delete-section {
+  width: 20%;
+  font-size: xxx-large;
+  border-color: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+footer {
+  background-color: #042d3c;
+}
